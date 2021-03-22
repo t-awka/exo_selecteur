@@ -2,26 +2,39 @@ section {
     padding-bottom: 50px;
     border-bottom: 1px black solid;
 }
-h4:first-of-type{
+/* ou "h4:first-of-type" à la place de "section:first-child>h4" */
+section:first-child>h4{
     color: blue;
 }
+
+/* exo 2 */
 section:nth-child(2){
     border-bottom: red solid 5px;
 }
 
-section:nth-child(3) h3,h3 + ul{
+/* exo 3 */
+section:nth-child(3)>h3, section:nth-child(3)>ul>li{
     color: red;
 }
-section:nth-child(4) ul>li:nth-child(2){
+
+/* exo 4 */
+/* ou "section:nth-child(4)>ul>li:nth-child(2)" ça aggrandit la puce en plus et pas juste le lien */
+section:nth-child(4)>ul>li>a{
     font-size: 25px;
 }
-h3 + span{
+
+/* exo 5 */
+section:nth-child(5)>h3 + span{
     color: blue;
 }
+
+/* exo 6 */
 img{
     border:black solid;
     border-radius: 50%;
 }
+
+/* exo 7 */
 section:nth-child(7) p:hover{
     color: green;
 }
